@@ -1,8 +1,6 @@
 #!/bin/sh
 # coding: utf-8
 #
-DEST=$(whoami)
-[ -d $DEST ] || mkdir -p $DEST
 
 ## Current date in unix-timestamp format
 CURRDATE=$(date +%s)
@@ -22,9 +20,9 @@ update_subtree () {
 
 ## Atom preferences
 update_subtree dot/.atom douggr/atom-config
-cd .atom
+cd dot/.atom
 . ./install.sh
-cd ..
+cd ../..
 
 ## Zuki themes
 update_subtree dot/.themes lassekongo83/zuki-themes
@@ -32,22 +30,17 @@ update_subtree dot/.themes lassekongo83/zuki-themes
 #
 # Copy the given path into your $HOME
 copy () {
-  FILE="${DEST}/${1}"
+  FILE="${HOME}/${1}"
 
   if [ -f $FILE ] || [ -d $FILE ]; then
     cp -r $FILE "${BACKUPDIR}/${CONF}"
   fi
 
-  cp -r $CONF $FILE
+  cp -r dot/$CONF $FILE
 }
 
 ## Loop though files and copy them into your $HOME directory
 for CONF in $(ls -A dot); do
-  case $CONF in
-    .git|backup|install.sh) continue
-      ;;
-
-    *) copy $CONF
-      ;;
-  esac
+  copy $CONF
 done
+
