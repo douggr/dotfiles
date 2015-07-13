@@ -3,8 +3,4 @@
 # A simple (and yet useful) shell prompt. I really don't like those `sexy'
 # prompts
 
-if [ -e $HOME/.bashrc.d/00fancy_echo ]; then
-  $HOME/.bashrc.d/00fancy_echo
-fi
-
 PS1="\u@\h:${BOLD}\w${RESET}${YELLOW}\$(__git_ps1)${RESET}\n\$ "
