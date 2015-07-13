@@ -1,0 +1,39 @@
+
+## ls'ing
+alias sl="ls"
+alias ls="ls -F"
+alias ll="ls -l"
+alias la="ls -a"
+alias ls="ls -F --color"
+alias ll="ls -l"
+alias la="ls -a"
+
+## Colorize the grep command output for ease of use (good for log files)##
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+## Start calculator with math support
+alias bc='bc -l'
+
+## Generate sha1 digest
+alias sha1='openssl sha1'
+
+## no error if existing, make parent directories as needed
+alias mkdir='mkdir -p'
+
+# install colordiff package :)
+alias diff='colordiff'
+
+## set some other defaults ##
+alias df='df -H'
+alias du='du -ch'
+
+## this one saved by butt so many times
+alias wget='wget -c'
+
+# Internet IP addresses
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+
+# Enhanced WHOIS lookups
+alias whois="whois -h whois-servers.net"

@@ -1,0 +1,12 @@
+# $HOME/.bashrc.d/00host_complete -*- shell-script -*-
+#
+# Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring
+# wildcards
+
+if [ -e "$HOME/.ssh/config" ]; then
+  HOSTS=$(grep "^Host" ${HOME}/.ssh/config | grep -v "[?*]" | cut -d " " -f2)
+  complete       \
+    -o "default" \
+    -o "nospace" \
+    -W "$HOSTS" scp sftp ssh
+fi

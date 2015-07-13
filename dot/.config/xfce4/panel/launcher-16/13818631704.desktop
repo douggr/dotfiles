@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Popcorn Time
+Comment=Watch Movies and TV Shows instantly
+Exec=popcorn-time
+Icon=tvtime
+Terminal=false
+StartupNotify=true

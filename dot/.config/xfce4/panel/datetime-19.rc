@@ -1,0 +1,6 @@
+layout=2
+date_font=Liberation Sans 10
+time_font=Bitstream Vera Sans 8
+date_format=%A, %d %B - %R
+time_format=%H:%M
+

@@ -1,0 +1,40 @@
+# $HOME/.bashrc.d/00fancy_echo -*- shell-script -*-
+#
+# Declare some color variables to use within shell scripts
+# Usage:
+# echo "${YELLOW} I'm yellow!${NORMAL}"
+#
+# Usable only with shell scripts
+#
+
+has_fancy_output () {
+  TPUT=/usr/bin/tput
+  EXPR=/usr/bin/expr
+  if  [ -t 1 ] && [ "x${TERM:-}" != "x" ] && [ "x${TERM:-}" != "xdumb" ] && [ -x $TPUT ] && [ -x $EXPR ] && $TPUT hpa 60 >/dev/null 2>&1 && $TPUT setaf 1 >/dev/null 2>&1
+  then
+      [ -z $FANCYTTY ] && FANCYTTY=1 || true
+  else
+      FANCYTTY=0
+  fi
+
+  case "$FANCYTTY" in
+      1|Y|yes|true)   true;;
+      *)              false;;
+  esac
+}
+
+if has_fancy_output; then
+  BOLD=$(setterm -bold on)
+  GREEN=$( $TPUT setaf 2)
+  NORMAL=$( $TPUT op)
+  RED=$( $TPUT setaf 1)
+  RESET=$(setterm -default)
+  YELLOW=$( $TPUT setaf 3)
+else
+  BOLD=''
+  GREEN=''
+  NORMAL=''
+  RED=''
+  RESET=''
+  YELLOW=''
+fi

@@ -1,0 +1,17 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Firefox
+Comment=When it’s personal, choose Firefox.
+GenericName=Web Browser
+X-GNOME-FullName=Iceweasel Web Browser
+Exec=firefox %u -P firefox
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=firefox
+Categories=Network;WebBrowser;
+MimeType=text/html;text/xml;application/xhtml+xml;application/xml;application/vnd.mozilla.xul+xml;application/rss+xml;application/rdf+xml;image/gif;image/jpeg;image/png;x-scheme-handler/http;x-scheme-handler/https;
+StartupWMClass=Iceweasel
+StartupNotify=true
+X-XFCE-Source=file:///usr/share/applications/iceweasel.desktop
+Path=

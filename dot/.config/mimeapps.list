@@ -1,0 +1,34 @@
+[Added Associations]
+text/plain=mousepad.desktop;
+image/jpeg=ristretto.desktop;iceweasel.desktop;
+application/x-php=mousepad.desktop;
+x-scheme-handler/http=userapp-Iceweasel-P1EZ1X.desktop;userapp-Iceweasel-03N51X.desktop;
+x-scheme-handler/https=userapp-Iceweasel-P1EZ1X.desktop;userapp-Iceweasel-03N51X.desktop;
+x-scheme-handler/ftp=userapp-Iceweasel-P1EZ1X.desktop;userapp-Iceweasel-03N51X.desktop;
+x-scheme-handler/chrome=userapp-Iceweasel-P1EZ1X.desktop;userapp-Iceweasel-03N51X.desktop;
+text/html=userapp-Iceweasel-P1EZ1X.desktop;userapp-Iceweasel-03N51X.desktop;
+application/x-extension-htm=userapp-Iceweasel-P1EZ1X.desktop;userapp-Iceweasel-03N51X.desktop;
+application/x-extension-html=userapp-Iceweasel-P1EZ1X.desktop;userapp-Iceweasel-03N51X.desktop;
+application/x-extension-shtml=userapp-Iceweasel-P1EZ1X.desktop;userapp-Iceweasel-03N51X.desktop;
+application/xhtml+xml=userapp-Iceweasel-P1EZ1X.desktop;userapp-Iceweasel-03N51X.desktop;
+application/x-extension-xhtml=userapp-Iceweasel-P1EZ1X.desktop;userapp-Iceweasel-03N51X.desktop;
+application/x-extension-xht=userapp-Iceweasel-P1EZ1X.desktop;userapp-Iceweasel-03N51X.desktop;
+application/x-shellscript=mousepad.desktop;
+application/json=mousepad.desktop;
+text/x-scheme=mousepad.desktop;
+text/x-matlab=mousepad.desktop;
+application/xml=mousepad.desktop;
+application/x-desktop=mousepad.desktop;
+
+[Default Applications]
+x-scheme-handler/http=userapp-Iceweasel-03N51X.desktop
+x-scheme-handler/https=userapp-Iceweasel-03N51X.desktop
+x-scheme-handler/ftp=userapp-Iceweasel-03N51X.desktop
+x-scheme-handler/chrome=userapp-Iceweasel-03N51X.desktop
+text/html=userapp-Iceweasel-03N51X.desktop
+application/x-extension-htm=userapp-Iceweasel-03N51X.desktop
+application/x-extension-html=userapp-Iceweasel-03N51X.desktop
+application/x-extension-shtml=userapp-Iceweasel-03N51X.desktop
+application/xhtml+xml=userapp-Iceweasel-03N51X.desktop
+application/x-extension-xhtml=userapp-Iceweasel-03N51X.desktop
+application/x-extension-xht=userapp-Iceweasel-03N51X.desktop
