@@ -54,8 +54,8 @@
     <property name="shadow_opacity" type="int" value="50"/>
     <property name="show_app_icon" type="bool" value="false"/>
     <property name="show_dock_shadow" type="bool" value="false"/>
-    <property name="show_frame_shadow" type="bool" value="false"/>
-    <property name="show_popup_shadow" type="bool" value="false"/>
+    <property name="show_frame_shadow" type="bool" value="true"/>
+    <property name="show_popup_shadow" type="bool" value="true"/>
     <property name="snap_resist" type="bool" value="false"/>
     <property name="snap_to_border" type="bool" value="true"/>
     <property name="snap_to_windows" type="bool" value="false"/>
@@ -63,7 +63,7 @@
     <property name="theme" type="string" value="Zukitre"/>
     <property name="tile_on_move" type="bool" value="true"/>
     <property name="title_alignment" type="string" value="center"/>
-    <property name="title_font" type="string" value="DejaVu Sans Bold 10"/>
+    <property name="title_font" type="string" value="Roboto Bold 11"/>
     <property name="title_horizontal_offset" type="int" value="0"/>
     <property name="title_shadow_active" type="string" value="false"/>
     <property name="title_shadow_inactive" type="string" value="false"/>
