@@ -1,27 +1,31 @@
 [alias]
-  br      = branch
-  brs     = branch -a
-  branches= branch -a
-  ci      = commit
-  co      = checkout
-  cr      = clone --recursive
-  cred    = "!f() { git commit --amend --author \"$1 <$2>\" -C HEAD; }; f"
-  d       = diff --patch-with-stat
-  df      = diff
-  g       = grep -I
-  l       = log --pretty=oneline -n 20 --graph
-  lg      = log -p
-  loq     = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(bold white)— %an%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative
-  pb      = publish-branch
-  rb      = rbranch
-  rc      = rank-contributors
-  rv      = review
-  remotes = remote -v
-  sm      = show-merges
-  s       = status -s
-  st      = status
-  tags    = tag -l
-  undo    = push -f origin HEAD^:master
+	br = branch
+	branches = branch -a
+	brs = branch -a
+	ci = commit -S
+	co = checkout
+	cr = clone --recursive
+	cred = "!f() { git commit --amend --author \"$1 <$2>\" -C HEAD; }; f"
+	d = diff --patch-with-stat
+	df = diff
+	g = grep -I
+	l = log --pretty=oneline -n 20 --graph
+	last = log -1 HEAD
+	lg = log -p
+	loq = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(bold white)— %an%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative
+	pb = publish-branch
+	rb = rbranch
+	rc = rank-contributors
+	remotes = remote -v
+	rv = review
+	s = status -sb
+	sign = commit -S
+	sm = show-merges
+	st = status
+	sync = pull --ff upstream master
+	tags = tag -l
+	undo = push -f origin HEAD^:master
+	up = pull --rebase
 
 [apply]
   whitespace = fix
